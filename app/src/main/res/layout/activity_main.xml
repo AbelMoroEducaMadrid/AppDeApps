@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primario_oscuro"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="App de Apps - Abel Moro"
+        android:textColor="@color/blanco"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/boton_tres_botones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/rojo"
+            android:text="Abrir Tres Botones"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/boton_calculadora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/rojo"
+            android:text="Abrir Calculadora"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/boton_contador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/rojo"
+            android:text="Abrir Contador"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/boton_linterna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/rojo"
+            android:text="Abrir Linterna"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/boton_intentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/rojo"
+            android:text="Abrir Intentos"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/boton_conversor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/rojo"
+            android:text="Abrir Conversor"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/boton_ciudades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/rojo"
+            android:text="Abrir Ciudades"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/boton_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/rojo"
+            android:text="Abrir RecyclerView"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/boton_parques"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/rojo"
+            android:text="Abrir Parques"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primario_oscuro"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="IES Ventura Rodríguez - 2º DAM - Enero 2025"
+        android:textColor="@color/blanco"
+        android:textSize="14sp" />
+</LinearLayout>

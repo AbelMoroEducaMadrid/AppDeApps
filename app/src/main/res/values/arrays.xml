@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="colorArray">
+        <item>@color/primario_claro</item>
+        <item>@color/primario</item>
+        <item>@color/primario_oscuro</item>
+        <item>@color/secundario_claro</item>
+        <item>@color/secundario_oscuro</item>
+        <item>@color/fondo</item>
+        <item>@color/primer_plano</item>
+        <item>@color/error</item>
+        <item>@color/exito</item>
+        <item>@color/advertencia</item>
+        <item>@color/informacion</item>
+        <item>@color/gris_claro</item>
+        <item>@color/gris</item>
+        <item>@color/gris_oscuro</item>
+        <item>@color/negro</item>
+        <item>@color/blanco</item>
+        <item>@color/rojo</item>
+        <item>@color/verde</item>
+        <item>@color/azul</item>
+        <item>@color/amarillo</item>
+        <item>@color/naranja</item>
+        <item>@color/morado</item>
+        <item>@color/rosa</item>
+        <item>@color/turquesa</item>
+        <item>@color/marron</item>
+        <item>@color/indigo</item>
+        <item>@color/cian</item>
+    </array>
+
+    <string-array name="fontArray">
+        <item>sans-serif</item>
+        <item>serif</item>
+        <item>monospace</item>
+        <item>sans-serif-light</item>
+        <item>sans-serif-condensed</item>
+        <item>serif-monospace</item>
+    </string-array>
+
+    <string-array name="dias_semana_array">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miércoles</item>
+        <item>Jueves</item>
+        <item>Viernes</item>
+        <item>Sábado</item>
+        <item>Domingo</item>
+    </string-array>
+
+    <string-array name="namesArray">
+        <item>Juan Pérez García</item>
+        <item>María López Fernández</item>
+        <item>Carlos Sánchez Martínez</item>
+        <item>Laura Gómez Rodríguez</item>
+        <item>José Díaz Hernández</item>
+        <item>Lucía Torres Jiménez</item>
+        <item>Pedro Ruiz González</item>
+        <item>Elena Morales Romero</item>
+        <item>Antonio Navarro Muñoz</item>
+        <item>Isabel Ramos Ortiz</item>
+        <item>Javier Castro Delgado</item>
+        <item>Teresa Molina Gil</item>
+        <item>Manuel Herrera Ruiz</item>
+        <item>Rosa Flores Sánchez</item>
+        <item>David Romero Pérez</item>
+        <item>Patricia Medina García</item>
+        <item>Francisco Ortiz López</item>
+        <item>Ángela Castillo Fernández</item>
+        <item>Alberto Ramos Jiménez</item>
+        <item>Beatriz Morales González</item>
+        <item>Ricardo Navarro Rodríguez</item>
+        <item>Clara Díaz Hernández</item>
+        <item>Fernando Ruiz Romero</item>
+        <item>Silvia Torres Muñoz</item>
+        <item>Raúl Gómez Ortiz</item>
+        <item>Inés Sánchez Delgado</item>
+        <item>Adrián Pérez Gil</item>
+        <item>Eva López Ruiz</item>
+        <item>Hugo Martínez Jiménez</item>
+        <item>Paula Fernández González</item>
+        <item>Diego Castro Rodríguez</item>
+        <item>Julia Molina Hernández</item>
+        <item>Marcos Herrera Romero</item>
+        <item>Elisa Ramos Muñoz</item>
+        <item>Álvaro Romero Ortiz</item>
+        <item>Victoria Flores Delgado</item>
+        <item>Ignacio Medina Gil</item>
+        <item>Andrea Ortiz Ruiz</item>
+        <item>Daniel Castillo Jiménez</item>
+        <item>Carla Navarro González</item>
+        <item>Mario Díaz Rodríguez</item>
+        <item>Valeria Ruiz Hernández</item>
+        <item>Gonzalo Torres Romero</item>
+        <item>Martina Gómez Muñoz</item>
+        <item>Lucas Sánchez Ortiz</item>
+        <item>Daniela Pérez Delgado</item>
+        <item>Mateo López Gil</item>
+        <item>Emma Martínez Ruiz</item>
+        <item>Leo Fernández Jiménez</item>
+    </string-array>
+
+</resources>

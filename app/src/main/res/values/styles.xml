@@ -1,0 +1,33 @@
+<resources>
+
+    <style name="CalculadoraBotonNumerico">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:backgroundTint">@color/gris_claro</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CalculadoraBotonOperacion">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:backgroundTint">@color/naranja</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="CalculadoraBotonIgual">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:backgroundTint">@color/verde</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>
