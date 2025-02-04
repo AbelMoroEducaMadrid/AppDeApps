@@ -76,5 +76,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Parques::class.java)
             startActivity(intent)
         }
+
+        // Navegar a Multiplos
+        binding.botonMultiplos.setOnClickListener {
+            val intent = Intent(this, Multiplos::class.java)
+            startActivity(intent)
+        }
     }
 }

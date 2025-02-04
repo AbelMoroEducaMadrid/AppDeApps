@@ -19,6 +19,16 @@
         android:theme="@style/Theme.AppFinalPrimeraEva"
         tools:targetApi="31">
         <activity
+            android:name=".MultiplosFinal"
+            android:exported="false"
+            android:theme="@style/Theme.AppFinalPrimeraEva" />
+        <activity
+            android:name=".MultiplosSecond"
+            android:exported="false" />
+        <activity
+            android:name=".Multiplos"
+            android:exported="false" />
+        <activity
             android:name=".TresBotones"
             android:exported="false" />
         <activity

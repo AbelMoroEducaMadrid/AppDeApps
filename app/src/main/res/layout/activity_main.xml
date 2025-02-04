@@ -105,6 +105,15 @@
             android:backgroundTint="@color/rojo"
             android:text="Abrir Parques"
             android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/boton_multiplos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/rojo"
+            android:text="Abrir Multiplos"
+            android:textSize="16sp" />
     </LinearLayout>
 
     <TextView
