@@ -9,7 +9,7 @@ import com.example.appfinalprimeraeva.databinding.ActivityMainBinding
  * Actividad principal que proporciona acceso a otras pantallas de la aplicación.
  */
 class MainActivity : AppCompatActivity() {
-    
+
     private lateinit var binding: ActivityMainBinding  // Binding para acceder a los elementos de la UI
 
     /**
@@ -74,6 +74,12 @@ class MainActivity : AppCompatActivity() {
         // Navegar a Parques
         binding.botonParques.setOnClickListener {
             val intent = Intent(this, Parques::class.java)
+            startActivity(intent)
+        }
+
+        // Navegar a Multiplos
+        binding.botonMultiplos.setOnClickListener {
+            val intent = Intent(this, Multiplos::class.java)
             startActivity(intent)
         }
     }
