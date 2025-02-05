@@ -10,8 +10,8 @@ import kotlin.random.Random
 
 /**
  * Custom View que dibuja un fondo animado con puntos en movimiento.
- * Los puntos se generan con un color aleatorio en escala de grises y
- * se desplazan lentamente por la pantalla, rebotando en los bordes.
+ * Los puntos se generan en negro o blanco con opacidad media (cerca del 50%).
+ * Se desplazan lentamente por la pantalla, rebotando en los bordes.
  *
  * @constructor Crea la vista con un contexto y atributos opcionales.
  */
@@ -78,7 +78,7 @@ class AnimatedDotsBackground(context: Context, attrs: AttributeSet?) : View(cont
      * @property radius Radio del punto.
      * @property dx Velocidad de desplazamiento en el eje X.
      * @property dy Velocidad de desplazamiento en el eje Y.
-     * @property color Color del punto en escala de grises.
+     * @property color Color del punto (negro o blanco con opacidad media).
      */
     private inner class Dot(width: Int, height: Int) {
         var x = Random.nextInt(width).toFloat()  // Posición X aleatoria dentro del ancho de la vista
@@ -86,8 +86,12 @@ class AnimatedDotsBackground(context: Context, attrs: AttributeSet?) : View(cont
         var radius = Random.nextInt(MIN_RADIUS, MAX_RADIUS).toFloat() // Radio aleatorio dentro del rango
         var dx = (Random.nextFloat() - 0.5f) * SPEED // Velocidad en X aleatoria en un rango negativo/positivo
         var dy = (Random.nextFloat() - 0.5f) * SPEED // Velocidad en Y aleatoria en un rango negativo/positivo
-        val grayValue = Random.nextInt(256) // Valor de gris aleatorio (0-255)
-        val color = Color.rgb(grayValue, grayValue, grayValue) // Color en escala de grises
+
+        // Selecciona aleatoriamente entre negro o blanco
+        val colorBase = if (Random.nextBoolean()) Color.BLACK else Color.WHITE
+        // Asigna una opacidad media (cerca de 127)
+        val alpha = Random.nextInt(100, 155)  // Opacidad media entre 100 y 155
+        val color = Color.argb(alpha, Color.red(colorBase), Color.green(colorBase), Color.blue(colorBase))
 
         /**
          * Actualiza la posición del punto y hace que rebote en los bordes.

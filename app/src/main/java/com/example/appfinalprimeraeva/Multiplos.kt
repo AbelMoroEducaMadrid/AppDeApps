@@ -1,6 +1,7 @@
 package com.example.appfinalprimeraeva
 
 import android.os.Bundle
+import android.view.animation.AnimationUtils
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -21,6 +22,9 @@ class Multiplos : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in_fast)
+        binding.main.startAnimation(fadeInAnimation)
 
         binding.buttonYes.setOnClickListener {
             val intent = Intent(this, MultiplosSecond::class.java)

@@ -6,32 +6,35 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.content.Intent
-import android.widget.Button
-import android.widget.TextView
+import android.view.animation.AnimationUtils
+import com.example.appfinalprimeraeva.databinding.ActivityMultiplosFinalBinding
 
 class MultiplosFinal : AppCompatActivity() {
+    private lateinit var binding: ActivityMultiplosFinalBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_multiplos_final)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        binding = ActivityMultiplosFinalBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        val message = intent.getStringExtra("message")
-        val messageTextView: TextView = findViewById(R.id.messageTextView)
-        messageTextView.text = message
+        val fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in_fast)
+        binding.main.startAnimation(fadeInAnimation)
 
-        val repeatButton: Button = findViewById(R.id.repeatButton)
-        repeatButton.setOnClickListener {
-            val intent = Intent(this, Multiplos::class.java)
+        val message = intent.getStringExtra("message")
+        binding.messageTextView.text = message
+
+        binding.repeatButton.setOnClickListener {
+            val intent = Intent(this, MultiplosSecond::class.java)
             startActivity(intent)
         }
 
-        val exitButton: Button = findViewById(R.id.exitButton)
-        exitButton.setOnClickListener {
+        binding.exitButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
