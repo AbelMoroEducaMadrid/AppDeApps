@@ -21,7 +21,7 @@
         android:id="@+id/messageTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="252dp"
+        android:layout_marginTop="136dp"
         android:text="MENSAJE FINAL"
         android:textAlignment="center"
         android:textSize="36sp"
@@ -32,40 +32,52 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/emoticonImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/face_raised_eyebrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/messageTextView"
+        app:tint="@color/gris_oscuro" />
+
     <Button
         android:id="@+id/repeatButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="272dp"
+        android:layout_marginTop="156dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/azul"
+        android:drawableStart="@drawable/thumbs_up"
         android:padding="16dp"
         android:text="REPETIR"
         android:textSize="20sp"
         android:typeface="monospace"
-        android:drawableStart="@drawable/thumbs_up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@id/exitButton"
-        app:layout_constraintTop_toBottomOf="@id/messageTextView" />
+        app:layout_constraintTop_toBottomOf="@id/emoticonImageView" />
 
     <Button
         android:id="@+id/exitButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="272dp"
+        android:layout_marginTop="156dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/rojo"
+        android:drawableStart="@drawable/thumbs_down"
         android:padding="16dp"
         android:text="SALIR"
         android:textSize="20sp"
         android:typeface="monospace"
-        android:drawableStart="@drawable/thumbs_down"
         app:layout_constraintEnd_toStartOf="@id/repeatButton"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/messageTextView" />
+        app:layout_constraintTop_toBottomOf="@id/emoticonImageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,10 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".Multiplos"
-    android:background="@color/blanco">
+    tools:context=".Multiplos">
 
-    <com.example.appfinalprimeraeva.AnimatedDotsBackground
+    <com.example.appfinalprimeraeva.AnimatedMathBackground
         android:id="@+id/animatedBackground"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -34,13 +33,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
         android:text="BIENVENIDO"
+        android:textColor="@color/blanco"
         android:textSize="48sp"
         android:textStyle="bold"
         android:typeface="monospace"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        android:textColor="@color/blanco"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -49,9 +48,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="¿Quieres jugar?"
+        android:textColor="@color/blanco"
         android:textSize="28sp"
         android:typeface="monospace"
-        android:textColor="@color/blanco"
         app:layout_constraintEnd_toEndOf="@+id/textView1"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="@+id/textView1"
