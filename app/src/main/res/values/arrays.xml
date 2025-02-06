@@ -101,4 +101,36 @@
         <item>Leo Fernández Jiménez</item>
     </string-array>
 
+    <string-array name="math_symbols">
+        <item>+</item>
+        <item>-</item>
+        <item>×</item>
+        <item>÷</item>
+        <item>=</item>
+        <item>π</item>
+        <item>∑</item>
+        <item>∫</item>
+        <item>√</item>
+        <item>%</item>
+        <item>!</item>
+        <item>≈</item>
+        <item>≠</item>
+        <item>≤</item>
+        <item>≥</item>
+        <item>∞</item>
+        <item>θ</item>
+        <item>Δ</item>
+        <item>∂</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
 </resources>

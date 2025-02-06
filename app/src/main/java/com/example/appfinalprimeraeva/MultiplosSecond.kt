@@ -3,6 +3,7 @@ package com.example.appfinalprimeraeva
 import android.content.Intent
 import android.os.Bundle
 import android.view.animation.AnimationUtils
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -28,9 +29,46 @@ class MultiplosSecond : AppCompatActivity() {
         binding.main.startAnimation(fadeInAnimation)
 
         binding.calculateButton.setOnClickListener {
-            val intent = Intent(this, MultiplosFinal::class.java)
-            intent.putExtra("message", "RESULTADO")
-            startActivity(intent)
+            validateAndProceed()
         }
+    }
+
+    private fun validateAndProceed() {
+        val inputText = binding.inputNumber.text.toString()
+        val numberRegex = """^-?\d+(\.\d+)?$""".toRegex()
+
+        when {
+            inputText.isEmpty() -> {
+                showToastAndClearInput("El campo está vacío")
+            }
+
+            inputText.any { it.isLetter() } -> {
+                showToastAndClearInput("El texto contiene letras")
+            }
+
+            inputText.contains(" ") -> {
+                showToastAndClearInput("El texto contiene espacios")
+            }
+
+            inputText.length > 10 -> {
+                showToastAndClearInput("El texto excede los 10 dígitos")
+            }
+
+            inputText.matches(numberRegex) -> {
+                val number = inputText.toDouble().toInt()
+                val intent = Intent(this, MultiplosFinal::class.java)
+                intent.putExtra("message", number.toString())
+                startActivity(intent)
+            }
+
+            else -> {
+                showToastAndClearInput("Texto no válido")
+            }
+        }
+    }
+
+    private fun showToastAndClearInput(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+        binding.inputNumber.text.clear()
     }
 }

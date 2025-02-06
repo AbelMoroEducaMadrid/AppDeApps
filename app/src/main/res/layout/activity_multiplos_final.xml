@@ -8,7 +8,7 @@
     android:padding="16dp"
     tools:context=".MultiplosFinal">
 
-    <com.example.appfinalprimeraeva.AnimatedDotsBackground
+    <com.example.appfinalprimeraeva.AnimatedMathBackground
         android:id="@+id/animatedBackground"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -44,6 +44,7 @@
         android:text="REPETIR"
         android:textSize="20sp"
         android:typeface="monospace"
+        android:drawableStart="@drawable/thumbs_up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@id/exitButton"
@@ -61,6 +62,7 @@
         android:text="SALIR"
         android:textSize="20sp"
         android:typeface="monospace"
+        android:drawableStart="@drawable/thumbs_down"
         app:layout_constraintEnd_toStartOf="@id/repeatButton"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"

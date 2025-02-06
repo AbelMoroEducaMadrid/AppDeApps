@@ -8,7 +8,7 @@
     android:padding="16dp"
     tools:context=".MultiplosSecond">
 
-    <com.example.appfinalprimeraeva.AnimatedDotsBackground
+    <com.example.appfinalprimeraeva.AnimatedMathBackground
         android:id="@+id/animatedBackground"
         android:layout_width="0dp"
         android:layout_height="0dp"
