@@ -67,10 +67,6 @@ class MultiplosSecond : AppCompatActivity() {
                 showToastAndClearInput("El texto contiene espacios")
             }
 
-            inputText.any() { !it.isDigit() } -> {
-                showToastAndClearInput("El texto contiene símbolos")
-            }
-
             inputText.length > 10 -> {
                 showToastAndClearInput("El texto excede los 10 dígitos")
             }
